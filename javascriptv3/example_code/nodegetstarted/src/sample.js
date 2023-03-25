@@ -40,9 +40,14 @@ const run = async () => {
   } catch (err) {
     console.log("Error", err);
   }
+};
+
+const createobj = async () => {
   // Create an object and upload it to the Amazon S3 bucket.
   try {
+    console.log("yyyyyyyyyyooooooooooooooo");
     const results = await s3Client.send(new PutObjectCommand(params));
+    console.log(results);
     console.log(
       "Successfully created " +
         params.Key +
@@ -57,6 +62,7 @@ const run = async () => {
   }
 };
 run();
+createobj();
 // snippet-end:[GettingStarted.JavaScript.NodeJS.sampleV3]
 // For unit tests.
 // module.exports = {run, params};
