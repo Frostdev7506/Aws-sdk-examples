@@ -1,0 +1,22 @@
+{
+  "name": "example-javascriptv3-lambda",
+  "version": "1.0.0",
+  "description": "Code samples for interacting with Lambda via the AWS SDK for JavaScript (v3)",
+  "main": "index.js",
+  "author": "Corey Pyle (corepyle@amazon.com)",
+  "license": "Apache-2.0",
+  "type": "module",
+  "scripts": {
+    "integration-test": "vitest run **/*.integration.test.js"
+  },
+  "dependencies": {
+    "@aws-sdk/client-lambda": "^3.163.0",
+    "ramda": "^0.28.0",
+    "libs": "*"
+  },
+  "devDependencies": {
+    "@aws-sdk/client-iam": "^3.241.0",
+    "@types/ramda": "^0.28.15",
+    "vitest": "^0.26.3"
+  }
+}

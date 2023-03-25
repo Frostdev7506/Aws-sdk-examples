@@ -1,0 +1,26 @@
+{
+  "name": "example-javascriptv3-cognito",
+  "version": "1.0.0",
+  "description": "Code samples for interacting with Cognito via the AWS SDK for JavaScript (v3)",
+  "main": "index.js",
+  "author": "Corey Pyle (corepyle@amazon.com)",
+  "license": "Apache-2.0",
+  "type": "module",
+  "scripts": {
+    "test": "vitest run **/*.unit.test.js",
+    "integration-test": "vitest run **/*.integration.test.js"
+  },
+  "dependencies": {
+    "@aws-sdk/client-cognito-identity-provider": "^3.183.0",
+    "@aws-sdk/client-ses": "^3.183.0",
+    "@types/qrcode-terminal": "^0.12.0",
+    "amazon-cognito-identity-js": "^5.2.10",
+    "aws-amplify": "^4.3.37",
+    "crypto-js": "^4.1.1",
+    "qrcode-terminal": "^0.12.0",
+    "ramda": "^0.28.0"
+  },
+  "devDependencies": {
+    "vitest": "^0.26.2"
+  }
+}
